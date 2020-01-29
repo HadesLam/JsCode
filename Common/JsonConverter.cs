@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Web.Script.Serialization;
 
-namespace CommonHelper
+namespace Common
 {
     public class JsonConverter
     {

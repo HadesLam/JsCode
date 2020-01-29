@@ -1,6 +1,6 @@
 ﻿using System.Web.Script.Serialization;
 
-namespace CommonHelper
+namespace Common
 {
     /// <summary>
     /// 前台Ajax请求的统一返回结果类

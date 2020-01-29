@@ -4,7 +4,7 @@ using System.IO;
 using System.Runtime.Serialization.Json;
 using System.Text;
 
-namespace CommonHelper
+namespace Common
 {
     /// <summary>
     /// 提供了一个关于json的辅助类

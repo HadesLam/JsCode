@@ -1,4 +1,4 @@
-﻿namespace CommonHelper
+﻿namespace Common
 {/// <summary>
  /// 判断字符串是否为JSON
  /// </summary>
