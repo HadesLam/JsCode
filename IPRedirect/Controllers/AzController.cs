@@ -1,9 +1,5 @@
-﻿using Core;
-using IServices;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using H.Core;
+using H.IService;
 using System.Web.Mvc;
 
 namespace IPRedirect.Controllers
@@ -11,7 +7,7 @@ namespace IPRedirect.Controllers
 
     public class AzController : Controller
     {
-        private IAmazonData _AmazonData = ServiceResposity.GetService<IAmazonData>();
+        private IAZDataService _AZData = ServiceResposity.GetService<IAZDataService>();
 
         public ActionResult Upload()
         {
@@ -22,7 +18,7 @@ namespace IPRedirect.Controllers
         {
             if (!string.IsNullOrWhiteSpace(orderNo))
             {
-                var _data = _AmazonData.SearchByOrderNo(orderNo);
+                var _data = _AZData.SearchByOrderNo(orderNo);
                 if (_data != null)
                 {
                     return Json(new { success = "OK", data = _data }, JsonRequestBehavior.AllowGet);

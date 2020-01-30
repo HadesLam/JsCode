@@ -60,19 +60,18 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Entity\Entity.csproj">
-      <Project>{ed19412a-e773-4fd8-b19a-d553ae002f18}</Project>
-      <Name>Entity</Name>
+    <ProjectReference Include="..\H.Entity\H.Entity.csproj">
+      <Project>{81AA3B86-D40F-4C3F-A52F-40AB4C2FB749}</Project>
+      <Name>H.Entity</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IServices\IServices.csproj">
-      <Project>{25fc3b80-b6fd-46bf-99a5-c5c164a0552a}</Project>
-      <Name>IServices</Name>
+    <ProjectReference Include="..\H.IService\H.IService.csproj">
+      <Project>{CF4E4C0B-94D7-4472-9074-B3C6DA9FF09B}</Project>
+      <Name>H.IService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{2564a01c-6060-4363-880e-42a96840a41f}</Project>
-      <Name>Model</Name>
+    <ProjectReference Include="..\H.Model\H.Model.csproj">
+      <Project>{716DE2A8-763A-4184-840D-ECDC4B4B15BC}</Project>
+      <Name>H.Model</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

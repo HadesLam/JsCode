@@ -1,5 +1,6 @@
 ﻿namespace Entity
 {
+    using Model;
     using System.Data.Entity;
     using System.Data.Entity.ModelConfiguration.Conventions;
 
@@ -14,7 +15,7 @@
             modelBuilder.Types().Configure(f => f.ToTable("Js_" + f.ClrType.Name));
         }
 
-        public DbSet<Model.AmazonData> AmazonData { get; set; }
+        public DbSet<AmazonData> TbAmazonData { get; set; }
     }
 
 

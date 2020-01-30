@@ -71,6 +71,9 @@
     <Reference Include="System.Management" />
     <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -129,6 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AzController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -158,9 +162,29 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{8909038e-ad95-4333-9bb3-a9d02eb11ae7}</Project>
-      <Name>Common</Name>
+    <ProjectReference Include="..\H.Common\H.Common.csproj">
+      <Project>{46ae7c0e-edd2-4939-8716-f1c95aa6c4d0}</Project>
+      <Name>H.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H.Core\H.Core.csproj">
+      <Project>{F6DE286D-76DD-4E92-8CA0-0777743FF056}</Project>
+      <Name>H.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H.Entity\H.Entity.csproj">
+      <Project>{81aa3b86-d40f-4c3f-a52f-40ab4c2fb749}</Project>
+      <Name>H.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H.IService\H.IService.csproj">
+      <Project>{CF4E4C0B-94D7-4472-9074-B3C6DA9FF09B}</Project>
+      <Name>H.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H.Model\H.Model.csproj">
+      <Project>{716de2a8-763a-4184-840d-ecdc4b4b15bc}</Project>
+      <Name>H.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H.Service\H.Service.csproj">
+      <Project>{6a34af97-aeab-46ce-99cf-fdba0660a2cf}</Project>
+      <Name>H.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

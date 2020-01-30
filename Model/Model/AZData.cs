@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Model
 {
-    public class AmazonData : BaseModel
+    public class AZData : BaseModel
     {
 
         [Key]

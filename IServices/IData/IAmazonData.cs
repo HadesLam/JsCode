@@ -1,9 +1,11 @@
-﻿namespace IServices
+﻿using Model;
+
+namespace IServices
 {
     public interface IAmazonData : IService
     {
-        int Add(Model.AmazonData _data);
-        int Update(Model.AmazonData _data);
-
+        int Add(AmazonData _data);
+        int Update(AmazonData _data);
+        AmazonData SearchByOrderNo(string _OrderNo);
     }
 }
