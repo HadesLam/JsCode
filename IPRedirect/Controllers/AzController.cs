@@ -9,7 +9,7 @@ namespace IPRedirect.Controllers
     {
         private IAZDataService _AZData = ServiceResposity.GetService<IAZDataService>();
 
-        public ActionResult Upload()
+        public ActionResult Index()
         {
             return View();
         }
@@ -21,10 +21,10 @@ namespace IPRedirect.Controllers
                 var _data = _AZData.SearchByOrderNo(orderNo);
                 if (_data != null)
                 {
-                    return Json(new { success = "OK", data = _data }, JsonRequestBehavior.AllowGet);
+                    return Json(new { success = "OK", data = _data });
                 }
             }
-            return Json(new { success = "NO" }, JsonRequestBehavior.AllowGet);
+            return Json(new { success = "NO" });
         }
     }
 }

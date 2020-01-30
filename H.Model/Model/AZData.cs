@@ -78,8 +78,8 @@ namespace H.Model
         [MaxLength(50)] public string product_category { get; set; }
         [MaxLength(500)] public string product_title { get; set; }
         [MaxLength(50)] public string warehouse_product_title { get; set; }
-        [MaxLength(50)] public string qty { get; set; }
-        [MaxLength(50)] public string unit_price { get; set; }
+        public double qty { get; set; }
+        public double unit_price { get; set; }
         [MaxLength(50)] public string record_no { get; set; }
         [MaxLength(50)] public string item_id { get; set; }
         [MaxLength(50)] public string transaction_id { get; set; }
