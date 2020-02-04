@@ -13,7 +13,7 @@ namespace H.Entity.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202001291636451_InitDB"; }
+            get { return "202002040508520_InitDB"; }
         }
         
         string IMigrationMetadata.Source

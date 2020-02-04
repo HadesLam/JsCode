@@ -69,9 +69,9 @@
     <Compile Include="DbSetExtend.cs" />
     <Compile Include="Entities.cs" />
     <Compile Include="EntitiesLocator.cs" />
-    <Compile Include="Migrations\202001291636451_InitDB.cs" />
-    <Compile Include="Migrations\202001291636451_InitDB.Designer.cs">
-      <DependentUpon>202001291636451_InitDB.cs</DependentUpon>
+    <Compile Include="Migrations\202002040508520_InitDB.cs" />
+    <Compile Include="Migrations\202002040508520_InitDB.Designer.cs">
+      <DependentUpon>202002040508520_InitDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,8 +87,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202001291636451_InitDB.resx">
-      <DependentUpon>202001291636451_InitDB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202002040508520_InitDB.resx">
+      <DependentUpon>202002040508520_InitDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

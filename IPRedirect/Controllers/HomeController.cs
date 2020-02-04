@@ -1,25 +1,20 @@
-﻿using Newtonsoft.Json;
+﻿using H.Core;
+using H.IService;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Text;
-using System.Web.Mvc;
-using System.Data;
-using System.Configuration;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
 using System.Text.RegularExpressions;
+using System.Web.Mvc;
+using H.Model;
 
 namespace IPRedirect.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        private IVisitorService _IVisitor = ServiceResposity.GetService<IVisitorService>();
         public object Index()
         {
             try
@@ -28,6 +23,13 @@ namespace IPRedirect.Controllers
                 var _data = IPGetCityCode();
                 if (_data != null)
                 {
+                    var _visitor = new Visitor();
+                    _visitor.IP = GetIP();
+                    _visitor.Country = _data["country"].ToString();
+                    _visitor.ISP = _data["isp"].ToString();
+                    _visitor.JsonStr = JsonConvert.SerializeObject(_data);
+                    _IVisitor.Add(_visitor);
+
                     //switch (_data["country_id"].ToString().ToUpper())
                     switch (_data["countryCode"].ToString().ToUpper())
                     {
@@ -39,14 +41,13 @@ namespace IPRedirect.Controllers
                 }
                 else
                 {
-                    new Exception($"IPGetCity is null");
+                    throw new Exception($"IPGetCity is null");
                 }
             }
             catch (Exception ex)
             {
                 return Json(new { Success = "NO", IP = GetIP(), sIP = IP, MSG = ex.ToString() }, JsonRequestBehavior.AllowGet);
             }
-            return null;
         }
 
         static Dictionary<string, object> IPGetCityCode()

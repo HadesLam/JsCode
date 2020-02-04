@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-[assembly: log4net.Config.XmlConfigurator(Watch = true)]
+
 namespace H.Core
 {
     public static class Log

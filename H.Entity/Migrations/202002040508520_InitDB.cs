@@ -80,8 +80,8 @@ namespace H.Entity.Migrations
                         product_category = c.String(maxLength: 50, storeType: "nvarchar"),
                         product_title = c.String(maxLength: 500, storeType: "nvarchar"),
                         warehouse_product_title = c.String(maxLength: 50, storeType: "nvarchar"),
-                        qty = c.String(maxLength: 50, storeType: "nvarchar"),
-                        unit_price = c.String(maxLength: 50, storeType: "nvarchar"),
+                        qty = c.Double(nullable: false),
+                        unit_price = c.Double(nullable: false),
                         record_no = c.String(maxLength: 50, storeType: "nvarchar"),
                         item_id = c.String(maxLength: 50, storeType: "nvarchar"),
                         transaction_id = c.String(maxLength: 50, storeType: "nvarchar"),
@@ -96,10 +96,24 @@ namespace H.Entity.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
+            CreateTable(
+                "dbo.Js_Visitor",
+                c => new
+                    {
+                        Id = c.Long(nullable: false, identity: true),
+                        IP = c.String(maxLength: 50, storeType: "nvarchar"),
+                        Country = c.String(maxLength: 50, storeType: "nvarchar"),
+                        ISP = c.String(maxLength: 50, storeType: "nvarchar"),
+                        JsonStr = c.String(maxLength: 1000, storeType: "nvarchar"),
+                        optime = c.DateTime(nullable: false, precision: 0),
+                    })
+                .PrimaryKey(t => t.Id);
+            
         }
         
         public override void Down()
         {
+            DropTable("dbo.Js_Visitor");
             DropTable("dbo.Js_AZData");
         }
     }

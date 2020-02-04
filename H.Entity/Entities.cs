@@ -16,6 +16,7 @@
         }
 
         public DbSet<AZData> BAS_AZData { get; set; }
+        public DbSet<Visitor> BAS_Visitor { get; set; }
     }
 
 
