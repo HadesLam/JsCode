@@ -19,7 +19,7 @@ namespace H.Service
 
         public AZData SearchByOrderNo(string _OrderNo)
         {
-            return Context.BAS_AZData.Where(o => o.refrence_no_platform.Equals(_OrderNo)).FirstOrDefault();
+            return Context.BAS_AZData.Where(o => _OrderNo.Contains(o.refrence_no_platform)).OrderByDescending(o => o.Id).FirstOrDefault();
         }
     }
 }

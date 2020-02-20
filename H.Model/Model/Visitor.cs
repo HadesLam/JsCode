@@ -11,10 +11,10 @@ namespace H.Model
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public new long Id { get; set; }
 
-        [MaxLength(50)] public string IP { get; set; }
-        [MaxLength(50)] public string Country { get; set; }
-        [MaxLength(50)] public string ISP { get; set; }
-        [MaxLength(1000)] public string JsonStr { get; set; }
+        [MaxLength(255)] public string IP { get; set; }
+        [MaxLength(255)] public string Country { get; set; }
+        [MaxLength(255)] public string ISP { get; set; }
+        [MaxLength(2000)] public string JsonStr { get; set; }
 
         /// <summary>
         /// 操作时间

@@ -151,7 +151,7 @@ namespace IPRedirect.Controllers
                         if (result.IndexOf(",") != -1)
                         {
                             //有","，估计多个代理。取第一个不是内网的IP。
-                            result = result.Replace(" ", "").Replace("", "");
+                            result = result.Replace(" ", "");
                             string[] temparyip = result.Split(",;".ToCharArray());
                             for (int i = 0; i < temparyip.Length; i++)
                             {
