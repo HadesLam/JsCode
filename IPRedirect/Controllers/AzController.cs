@@ -1,5 +1,6 @@
 ﻿using H.Core;
 using H.IService;
+using H.Model;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace IPRedirect.Controllers
     public class AzController : Controller
     {
         private IAZDataService _AZData = ServiceResposity.GetService<IAZDataService>();
+        private IMCDataService _MCData = ServiceResposity.GetService<IMCDataService>();
 
         public ActionResult Index()
         {
@@ -36,20 +38,30 @@ namespace IPRedirect.Controllers
             {
                 Log.Info($"【AzController/GetQuery】REQ:{requestStringData}");
                 var reqs = JsonConvert.DeserializeObject<Dictionary<string, string>>(requestStringData);
-                var _data = _AZData.SearchByOrderNo(reqs["OrderNo"]);
+                var _data = _AZData.SearchByOrderNo(reqs["order_no"]);
                 if (_data != null)
                 {
-                    return Json(new { success = "OK", data = _data });
+                    var _mcdata = new MCData();
+                    _mcdata.buyer_orderno = reqs["order_no"];
+                    _mcdata.buyer_email = reqs["order_email"];
+                    _MCData.Add(_mcdata);
+
+                    string _link = "";
+                    if (_data.platform_user_name.Contains("US")) _link = "https://www.amazon.com/review/review-your-purchases/listing";
+                    if (_data.platform_user_name.Contains("UK")) _link = "https://www.amazon.co.uk/review/review-your-purchases/listing";
+                    if (_data.platform_user_name.Contains("CA")) _link = "https://www.amazon.ca/review/review-your-purchases/listing";
+                    if (_data.platform_user_name.Contains("DE")) _link = "https://www.amazon.de/review/review-your-purchases/listing";
+                    return Json(new { success = "OK", message = "Got it. Thanks!", link = _link, data = _data });
                 }
             }
-            return Json(new { success = "NO" });
+            return Json(new { success = "NO", message = "Invalid order number!" });
         }
 
         /// <summary>
         /// 检查Url地址
         /// </summary>
         /// <returns></returns>
-        public JsonResult CheckUrl()
+        public JsonResult GetCheckUrl()
         {
             Stream stream = Request.InputStream;
 
@@ -60,16 +72,25 @@ namespace IPRedirect.Controllers
 
             if (!string.IsNullOrEmpty(requestStringData))
             {
-                Log.Info($"【AzController/CheckUrl】REQ:{requestStringData}");
+                Log.Info($"【AzController/GetCheckUrl】REQ:{requestStringData}");
                 var reqs = JsonConvert.DeserializeObject<Dictionary<string, string>>(requestStringData);
-                var _url = reqs["Url"];
-                var _src = $"https://www.amazon.com/gp/customer-reviews";
-                if(_url.Contains(_src))
+                var _order_customer_reviews = reqs["order_customer_reviews"];
+                var _order_link = reqs["order_link"];
+                var _obj_order_customer_reviews = new Uri(_order_customer_reviews);
+                var _obj_order_link = new Uri(_order_link);
+                var _target = $"/gp/customer-reviews";
+                if (_order_customer_reviews.Contains(_target) && _obj_order_customer_reviews.Host.Equals(_obj_order_link.Host))
                 {
-                    return Json(new { success = "OK" });
+                    var _mcdata = new MCData();
+                    _mcdata.buyer_orderno = reqs["order_no"];
+                    _mcdata.buyer_email = reqs["order_email"];
+                    _mcdata.buyer_customer_reviews = _order_customer_reviews;
+                    _MCData.Update(_mcdata);
+                    return Json(new { success = "OK", result = true });
                 }
             }
-            return Json(new { success = "NO" });
+            return Json(new { success = "NO", result = false });
         }
+
     }
 }
