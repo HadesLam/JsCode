@@ -81,6 +81,10 @@
     <Compile Include="Migrations\202002211051009_MCData.Designer.cs">
       <DependentUpon>202002211051009_MCData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004271229029_IPSite.cs" />
+    <Compile Include="Migrations\202004271229029_IPSite.Designer.cs">
+      <DependentUpon>202004271229029_IPSite.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -103,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002211051009_MCData.resx">
       <DependentUpon>202002211051009_MCData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004271229029_IPSite.resx">
+      <DependentUpon>202004271229029_IPSite.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

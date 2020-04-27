@@ -15,6 +15,7 @@ namespace IPRedirect.Controllers
     public class HomeController : Controller
     {
         private IVisitorService _IVisitor = ServiceResposity.GetService<IVisitorService>();
+        private IIPSiteService _IIPSite = ServiceResposity.GetService<IIPSiteService>();
         public object Index()
         {
             try
@@ -31,13 +32,17 @@ namespace IPRedirect.Controllers
                     _IVisitor.Add(_visitor);
 
                     //switch (_data["country_id"].ToString().ToUpper())
-                    switch (_data["countryCode"].ToString().ToUpper())
-                    {
-                        case "US":
-                            return Redirect("https://infantryusa.com/");
-                        default:
-                            return Redirect("https://www.infantrywatchco.com");
-                    }
+
+                    //switch (_data["countryCode"].ToString().ToUpper())
+                    //{
+                    //    case "US":
+                    //        return Redirect("https://infantryusa.com/");
+                    //    default:
+                    //        return Redirect("https://www.infantrywatchco.com");
+                    //}
+
+                    return Redirect(_IIPSite.Search(_data["countryCode"].ToString()).siteUrl);
+
                 }
                 else
                 {

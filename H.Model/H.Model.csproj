@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IModel.cs" />
+    <Compile Include="Model\IPSite.cs" />
     <Compile Include="Model\MCData.cs" />
     <Compile Include="Model\Visitor.cs" />
     <Compile Include="Model\AZData.cs" />
