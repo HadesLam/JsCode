@@ -39,11 +39,12 @@ namespace IPRedirect.Controllers
                 Log.Info($"【AzController/GetQuery】REQ:{requestStringData}");
                 var reqs = JsonConvert.DeserializeObject<Dictionary<string, string>>(requestStringData);
                 var _data = _AZData.SearchByOrderNo(reqs["order_no"]);
+                var _mcdata = new MCData();
+                _mcdata.buyer_email = reqs["order_email"];
                 if (_data != null)
                 {
-                    var _mcdata = new MCData();
-                    _mcdata.buyer_orderno = reqs["order_no"];
-                    _mcdata.buyer_email = reqs["order_email"];
+                    _mcdata.buyer_orderno = _data.refrence_no_platform;
+                    _mcdata.IsQueryOK = 1;
                     _MCData.Add(_mcdata);
 
                     string _link = "";
@@ -52,6 +53,12 @@ namespace IPRedirect.Controllers
                     if (_data.platform_user_name.Contains("CA")) _link = "https://www.amazon.ca/review/review-your-purchases/listing";
                     if (_data.platform_user_name.Contains("DE")) _link = "https://www.amazon.de/review/review-your-purchases/listing";
                     return Json(new { success = "OK", message = "Got it. Thanks!", link = _link, data = _data });
+                }
+                else
+                {
+                    _mcdata.buyer_orderno = reqs["order_no"];
+                    _mcdata.IsQueryOK = 0;
+                    _MCData.Add(_mcdata);
                 }
             }
             return Json(new { success = "NO", message = "Invalid order number!" });

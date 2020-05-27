@@ -85,6 +85,14 @@
     <Compile Include="Migrations\202004271229029_IPSite.Designer.cs">
       <DependentUpon>202004271229029_IPSite.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005070551095_UpdateMCData.cs" />
+    <Compile Include="Migrations\202005070551095_UpdateMCData.Designer.cs">
+      <DependentUpon>202005070551095_UpdateMCData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005271605035_KsData.cs" />
+    <Compile Include="Migrations\202005271605035_KsData.Designer.cs">
+      <DependentUpon>202005271605035_KsData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -110,6 +118,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004271229029_IPSite.resx">
       <DependentUpon>202004271229029_IPSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005070551095_UpdateMCData.resx">
+      <DependentUpon>202005070551095_UpdateMCData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005271605035_KsData.resx">
+      <DependentUpon>202005271605035_KsData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

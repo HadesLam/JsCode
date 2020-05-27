@@ -14,7 +14,7 @@ namespace H.Model
         [MaxLength(255)] public string buyer_email { get; set; }
         [MaxLength(255)] public string buyer_orderno { get; set; }
         [MaxLength(1000)] public string buyer_customer_reviews { get; set; }
-
+        public int IsQueryOK { get; set; }
         /// <summary>
         /// 操作时间
         /// </summary>

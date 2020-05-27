@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\KSDataService.cs" />
     <Compile Include="Data\IPSiteService.cs" />
     <Compile Include="Data\MCDataService.cs" />
     <Compile Include="Data\VisitorService.cs" />

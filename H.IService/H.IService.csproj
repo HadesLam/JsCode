@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IData\IAZDataService.cs" />
+    <Compile Include="IData\IKSDataService.cs" />
     <Compile Include="IData\IMCDataService.cs" />
     <Compile Include="IData\IVisitorService.cs" />
     <Compile Include="IData\IIPSiteService.cs" />
