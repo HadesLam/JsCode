@@ -16,11 +16,11 @@ ready(function () {
     var watchBezel = SVG.get('watch-bezel');
 
     var speed = '0.5s';
-    var swatchCore = watchCore.attr('xlink:href');
-    var swatchBand = watchBand.attr('xlink:href');
-    var swatchCase = watchCase.attr('xlink:href');
-    var swatchFace = watchFace.attr('xlink:href');
-    var swatchBezel = watchBezel.attr('xlink:href');
+    swatchCore = watchCore.attr('xlink:href');
+    swatchBand = watchBand.attr('xlink:href');
+    swatchCase = watchCase.attr('xlink:href');
+    swatchFace = watchFace.attr('xlink:href');
+    swatchBezel = watchBezel.attr('xlink:href');
 
     var _watchCore = document.querySelectorAll('.watchCore input[type="radio"]');
     count = _watchCore.length;
@@ -66,20 +66,19 @@ ready(function () {
             watchBezel.animate(speed).attr('xlink:href', this.value);
         });
     }
+});
 
-    document.getElementById('button-submit').addEventListener('click', function (e) {
-        var swatch = swatchCore + swatchBand + swatchCase + swatchFace + swatchBezel;
-        swatch = swatch.replace(/Images/g, '').replace(/product/g, '').replace(/\//g, '').replace(/.png/g, '');
-        $.get("/ks/add?model=" + swatch, function (result) { });
-        layer.alert(swatch, {
-            title: 'MODEL CODE',
-            icon: 6
-        });
+document.getElementById('button-submit').addEventListener('click', function (e) {
+    var swatch = swatchCore + swatchBand + swatchCase + swatchFace + swatchBezel;
+    swatch = swatch.replace(/Images/g, '').replace(/product/g, '').replace(/\//g, '').replace(/.png/g, '');
+    jQuery.get("/ks/add?model=" + swatch, function (result) { });
+    layer.alert(swatch, {
+        title: 'MODEL CODE',
+        icon: 6
     });
-
 });
 
 layui.use(['element', 'layer'], function () {
-    var element = layui.element;
-    var layer = layui.layer;
+    element = layui.element;
+    layer = layui.layer;
 });
