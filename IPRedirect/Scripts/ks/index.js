@@ -69,12 +69,13 @@ ready(function () {
 });
 
 document.getElementById('button-submit').addEventListener('click', function (e) {
-    var swatch = swatchCore + swatchBand + swatchCase + swatchFace + swatchBezel;
+    var swatch = 'IN' + swatchCore + swatchCase + swatchFace + swatchBezel + swatchBand;
     swatch = swatch.replace(/Images/g, '').replace(/product/g, '').replace(/\//g, '').replace(/.png/g, '');
     jQuery.get("/ks/add?model=" + swatch, function (result) { });
     layer.alert(swatch, {
         title: 'MODEL CODE',
-        icon: 6
+        icon: 6,
+        btn: ['CONFIRM']
     });
 });
 
