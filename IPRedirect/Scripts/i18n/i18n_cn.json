@@ -1,0 +1,29 @@
+{
+  "i18n.Title": "鹰轰 - 定制你的表",
+
+  "i18n.Dial.title": "带有机芯的表盘",
+  "i18n.Dial.title.01": "海欧镂空机械机心",
+  "i18n.Dial.title.02": "海欧24小时显示机械机心",
+  "i18n.Dial.title.03": "精工NH35自动机心",
+
+  "i18n.Case.title": "表壳",
+  "i18n.Case.title.01": "不锈钢 PVD电镀涂层",
+  "i18n.Case.title.02": "不锈钢 CERAKOTE 油漆涂层",
+  "i18n.Case.title.03": "塑料",
+
+  "i18n.Face.title": "表面牌",
+  "i18n.Face.title.01": "不锈钢 PVD电镀涂层",
+  "i18n.Face.title.02": "不锈钢 CERAKOTE 油漆涂层",
+  "i18n.Face.title.03": "塑料",
+
+  "i18n.Ring.title": "表圈",
+  "i18n.Ring.title.01": "不锈钢 PVD电镀涂层",
+  "i18n.Ring.title.02": "不锈钢 CERAKOTE 油漆涂层",
+
+  "i18n.Strap.title": "表带",
+  "i18n.Strap.title.01": "不锈钢",
+  "i18n.Strap.title.02": "真皮",
+  "i18n.Strap.title.03": "矽胶",
+
+  "i18n.SUBMIT": "提交"
+}

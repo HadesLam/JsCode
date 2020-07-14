@@ -1,0 +1,29 @@
+{
+  "i18n.Title": "Infantry - Custom Your watch",
+
+  "i18n.Dial.title": "Watch Dial W/ Movement",
+  "i18n.Dial.title.01": "Skeleton - Seagull Automatic Movement",
+  "i18n.Dial.title.02": "GMT 24HRS - Seagull Automatic Movement",
+  "i18n.Dial.title.03": "Analog w/date - Seiko NH35 automatic movement",
+
+  "i18n.Case.title": "Watch Case",
+  "i18n.Case.title.01": "Stainless Steel PVD",
+  "i18n.Case.title.02": "Stainless Steel Cerakote",
+  "i18n.Case.title.03": "Plastic",
+
+  "i18n.Face.title": "Watch Face Plate",
+  "i18n.Face.title.01": "Stainless Steel PVD",
+  "i18n.Face.title.02": "Stainless Steel Cerakote",
+  "i18n.Face.title.03": "Plastic",
+
+  "i18n.Ring.title": "Watch Ring",
+  "i18n.Ring.title.01": "Stainless Steel PVD",
+  "i18n.Ring.title.02": "Stainless Steel Cerakote",
+
+  "i18n.Strap.title": "Watch Strap",
+  "i18n.Strap.title.01": "Stainless Steels Band",
+  "i18n.Strap.title.02": "Genuine Leather",
+  "i18n.Strap.title.03": "Silicon",
+
+  "i18n.SUBMIT": "SUBMIT"
+}

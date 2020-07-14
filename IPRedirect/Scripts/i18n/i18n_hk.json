@@ -1,0 +1,29 @@
+{
+  "i18n.Title": "鷹轟 - 客製你的錶",
+
+  "i18n.Dial.title": "帶有機芯的錶盤",
+  "i18n.Dial.title.01": "海歐鏤空機械機心",
+  "i18n.Dial.title.02": "海歐24小時顯示機械機心",
+  "i18n.Dial.title.03": "精工NH35自動機心",
+
+  "i18n.Case.title": "錶殼",
+  "i18n.Case.title.01": "不鏽鋼 PVD電鍍塗層",
+  "i18n.Case.title.02": "不鏽鋼 CERAKOTE 油漆塗層",
+  "i18n.Case.title.03": "塑料",
+
+  "i18n.Face.title": "錶面牌",
+  "i18n.Face.title.01": "不鏽鋼 PVD電鍍塗層",
+  "i18n.Face.title.02": "不鏽鋼 CERAKOTE 油漆塗層",
+  "i18n.Face.title.03": "塑料",
+
+  "i18n.Ring.title": "錶圈",
+  "i18n.Ring.title.01": "不鏽鋼 PVD電鍍塗層",
+  "i18n.Ring.title.02": "不鏽鋼 CERAKOTE 油漆塗層",
+
+  "i18n.Strap.title": "錶帶",
+  "i18n.Strap.title.01": "不鏽鋼",
+  "i18n.Strap.title.02": "真皮",
+  "i18n.Strap.title.03": "矽膠",
+
+  "i18n.SUBMIT": "遞交"
+}

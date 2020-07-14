@@ -7,6 +7,11 @@ body {
     background-color: #000;
 }
 
+.showLang option {
+    color: black;
+    line-height: 30px;
+}
+
 .mdl-card__actions:after {
     content: '';
     display: table;
