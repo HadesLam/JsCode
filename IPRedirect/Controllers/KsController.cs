@@ -15,8 +15,30 @@ namespace IPRedirect.Controllers
     public class KsController : Controller
     {
         private IKSDataService _IKSData = ServiceResposity.GetService<IKSDataService>();
-        public ActionResult Index()
+        public RedirectResult Index()
         {
+            return Redirect("~/ks/in");
+        }
+
+        public ActionResult IN()
+        {
+            var url = Request.UrlReferrer;
+            ViewBag.dsShow = false;
+            if (url != null && url.AbsoluteUri.ToLower().Contains("/ds/"))
+            {
+                ViewBag.dsShow = true;
+            }
+            return View();
+        }
+
+        public ActionResult RE()
+        {
+            var url = Request.UrlReferrer;
+            ViewBag.dsShow = false;
+            if (url != null && url.AbsoluteUri.ToLower().Contains("/ds/"))
+            {
+                ViewBag.dsShow = true;
+            }
             return View();
         }
 

@@ -2,9 +2,11 @@
   "i18n.Title": "鹰轰 - 定制你的表",
 
   "i18n.Dial.title": "带有机芯的表盘",
-  "i18n.Dial.title.01": "海欧镂空机械机心",
-  "i18n.Dial.title.02": "海欧24小时显示机械机心",
-  "i18n.Dial.title.03": "精工NH35自动机心",
+  "i18n.Dial.title.01": "海欧镂空机械机芯",
+  "i18n.Dial.title.02": "海欧24小时显示机械机芯",
+  "i18n.Dial.title.03": "精工NH35自动机芯",
+  "i18n.Dial.title.04": "瑞士STP镂空自动机械机芯",
+  "i18n.Dial.title.05": "日本Miyota自动机械机芯",
 
   "i18n.Case.title": "表壳",
   "i18n.Case.title.01": "不锈钢 PVD电镀涂层",

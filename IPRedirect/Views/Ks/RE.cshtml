@@ -1,0 +1,66 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title i18n="i18n.Title">Infantry - Custom Your watch</title>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel='stylesheet prefetch' href='~/Content/ks/material.blue-orange.min.css'>
+    <link type="text/css" rel="stylesheet" href="~/Content/ks/style.css">
+    <link type="text/css" rel="stylesheet" href="~/Dist/layui/css/layui.css">
+    <link type="text/css" rel="stylesheet" href="~/Dist/layui/css/layui.mobile.css">
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        @Html.Partial("_Header")
+        <main class="mdl-layout__content">
+            <div class="page-content mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--3-col-tablet mdl-cell--middle">
+                    <div class="watch">
+                        <svg class="watch-image" id="watch-image" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <g class="svg-content">
+                                <image id="watch-band" height="400" width="233" xlink:href="/Images/product/D01.png" />
+                                <image id="watch-core" height="400" width="233" xlink:href="/Images/product/CA.png" />
+                                <image id="watch-case" height="400" width="233" xlink:href="/Images/product/A15.png" />
+                                <image id="watch-bezel" height="400" width="233" xlink:href="/Images/product/C13.png" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--5-col-tablet mdl-cell--middle">
+                    <div class="settings mdl-card mdl-shadow--2dp">
+                        <div class="options">
+                            <div class="layui-collapse" lay-accordion="">
+                                @Html.Partial("_WatchDial_00")
+                                @Html.Partial("_WatchCase_00")
+                                @Html.Partial("_WatchRing_00")
+                                @Html.Partial("_WatchStrap")
+                            </div>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <button id="button-submit" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" i18n="i18n.SUBMIT">SUBMIT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script type="text/javascript" src='~/Scripts/jquery-3.5.1.min.js'></script>
+    <script type="text/javascript" src='~/Scripts/ks/material.min.js'></script>
+    <script type="text/javascript" src='~/Scripts/ks/svg.min.js'></script>
+    <script type="text/javascript" src='~/Scripts/jquery.i18n.js'></script>
+    <script type="text/javascript" src='~/Scripts/ks/tinycolor.min.js'></script>
+    <script type="text/javascript" src="~/Dist/layui/layui.js"></script>
+    <script type="text/javascript" src="~/Scripts/ks/i18n.js?v=XvoQC9NkwoZP5yDt"></script>
+    <script type="text/javascript" src="~/Scripts/ks/page_re.js?v=XvoQC9NkwoZP5yDt"></script>
+
+</body>
+
+</html>

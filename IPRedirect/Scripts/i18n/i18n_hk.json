@@ -2,9 +2,11 @@
   "i18n.Title": "鷹轟 - 客製你的錶",
 
   "i18n.Dial.title": "帶有機芯的錶盤",
-  "i18n.Dial.title.01": "海歐鏤空機械機心",
-  "i18n.Dial.title.02": "海歐24小時顯示機械機心",
-  "i18n.Dial.title.03": "精工NH35自動機心",
+  "i18n.Dial.title.01": "海歐鏤空機械機芯",
+  "i18n.Dial.title.02": "海歐24小時顯示機械機芯",
+  "i18n.Dial.title.03": "精工NH35自動機芯",
+  "i18n.Dial.title.04": "瑞士STP鏤空自動機械機芯",
+  "i18n.Dial.title.05": "日本Miyota自動機械機芯",
 
   "i18n.Case.title": "錶殼",
   "i18n.Case.title.01": "不鏽鋼 PVD電鍍塗層",
