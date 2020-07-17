@@ -150,6 +150,10 @@
     <Content Include="Images\product\A12.png" />
     <Content Include="Images\product\A13.png" />
     <Content Include="Images\product\A14.png" />
+    <Content Include="Images\product\A15.png" />
+    <Content Include="Images\product\A16.png" />
+    <Content Include="Images\product\A17.png" />
+    <Content Include="Images\product\A18.png" />
     <Content Include="Images\product\B01.png" />
     <Content Include="Images\product\B02.png" />
     <Content Include="Images\product\B03.png" />
@@ -176,6 +180,10 @@
     <Content Include="Images\product\C10.png" />
     <Content Include="Images\product\C11.png" />
     <Content Include="Images\product\C12.png" />
+    <Content Include="Images\product\C13.png" />
+    <Content Include="Images\product\C14.png" />
+    <Content Include="Images\product\C15.png" />
+    <Content Include="Images\product\C16.png" />
     <Content Include="Images\product\CA.png" />
     <Content Include="Images\product\CB.png" />
     <Content Include="Images\product\CC.png" />
@@ -189,6 +197,10 @@
     <Content Include="Images\product\CK.png" />
     <Content Include="Images\product\CL.png" />
     <Content Include="Images\product\CM.png" />
+    <Content Include="Images\product\CN.png" />
+    <Content Include="Images\product\CO.png" />
+    <Content Include="Images\product\CP.png" />
+    <Content Include="Images\product\CQ.png" />
     <Content Include="Images\product\D01.png" />
     <Content Include="Images\product\D02.png" />
     <Content Include="Images\product\D03.png" />
@@ -220,6 +232,10 @@
     <Content Include="Images\thumbs\A12.jpg" />
     <Content Include="Images\thumbs\A13.jpg" />
     <Content Include="Images\thumbs\A14.jpg" />
+    <Content Include="Images\thumbs\A15.jpg" />
+    <Content Include="Images\thumbs\A16.jpg" />
+    <Content Include="Images\thumbs\A17.jpg" />
+    <Content Include="Images\thumbs\A18.jpg" />
     <Content Include="Images\thumbs\B01.jpg" />
     <Content Include="Images\thumbs\B02.jpg" />
     <Content Include="Images\thumbs\B03.jpg" />
@@ -246,6 +262,10 @@
     <Content Include="Images\thumbs\C10.jpg" />
     <Content Include="Images\thumbs\C11.jpg" />
     <Content Include="Images\thumbs\C12.jpg" />
+    <Content Include="Images\thumbs\C13.jpg" />
+    <Content Include="Images\thumbs\C14.jpg" />
+    <Content Include="Images\thumbs\C15.jpg" />
+    <Content Include="Images\thumbs\C16.jpg" />
     <Content Include="Images\thumbs\CA.jpg" />
     <Content Include="Images\thumbs\CB.jpg" />
     <Content Include="Images\thumbs\CC.jpg" />
@@ -259,6 +279,10 @@
     <Content Include="Images\thumbs\CK.jpg" />
     <Content Include="Images\thumbs\CL.jpg" />
     <Content Include="Images\thumbs\CM.jpg" />
+    <Content Include="Images\thumbs\CN.jpg" />
+    <Content Include="Images\thumbs\CO.jpg" />
+    <Content Include="Images\thumbs\CP.jpg" />
+    <Content Include="Images\thumbs\CQ.jpg" />
     <Content Include="Images\thumbs\D01.jpg" />
     <Content Include="Images\thumbs\D02.jpg" />
     <Content Include="Images\thumbs\D03.jpg" />
@@ -542,11 +566,12 @@
     <Content Include="Views\Ks\_WatchDial_00.cshtml" />
     <Content Include="Views\Ks\_Header.cshtml" />
     <Content Include="Views\Ks\_WatchCase_01.cshtml" />
-    <Content Include="Views\Ks\_WatchRing_00.cshtml" />
+    <Content Include="Views\Ks\_WatchRing_01.cshtml" />
     <Content Include="Views\Ks\_WatchFace_00.cshtml" />
     <Content Include="Views\Ks\_WatchStrap.cshtml" />
     <Content Include="Views\Ks\_WatchCase_00.cshtml" />
     <Content Include="Views\Ks\_WatchDial_01.cshtml" />
+    <Content Include="Views\Ks\_WatchRing_00.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

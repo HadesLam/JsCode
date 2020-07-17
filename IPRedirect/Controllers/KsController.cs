@@ -24,7 +24,7 @@ namespace IPRedirect.Controllers
         {
             var url = Request.UrlReferrer;
             ViewBag.dsShow = false;
-            if (url != null && url.AbsoluteUri.ToLower().Contains("/ds/"))
+            if (url != null && url.AbsoluteUri.ToLower().Contains("/ds"))
             {
                 ViewBag.dsShow = true;
             }
@@ -35,7 +35,7 @@ namespace IPRedirect.Controllers
         {
             var url = Request.UrlReferrer;
             ViewBag.dsShow = false;
-            if (url != null && url.AbsoluteUri.ToLower().Contains("/ds/"))
+            if (url != null && url.AbsoluteUri.ToLower().Contains("/ds"))
             {
                 ViewBag.dsShow = true;
             }
