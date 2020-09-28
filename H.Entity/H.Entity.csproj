@@ -96,6 +96,10 @@
     <Compile Include="Migrations\202005271605035_KsData.Designer.cs">
       <DependentUpon>202005271605035_KsData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009280204036_Setting.cs" />
+    <Compile Include="Migrations\202009280204036_Setting.designer.cs">
+      <DependentUpon>202009280204036_Setting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -127,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005271605035_KsData.resx">
       <DependentUpon>202005271605035_KsData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009280204036_Setting.resx">
+      <DependentUpon>202009280204036_Setting.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

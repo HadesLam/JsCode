@@ -154,6 +154,11 @@
     <Content Include="Images\product\A16.png" />
     <Content Include="Images\product\A17.png" />
     <Content Include="Images\product\A18.png" />
+    <Content Include="Images\product\A19.png" />
+    <Content Include="Images\product\A20.png" />
+    <Content Include="Images\product\A21.png" />
+    <Content Include="Images\product\A22.png" />
+    <Content Include="Images\product\A23.png" />
     <Content Include="Images\product\B01.png" />
     <Content Include="Images\product\B02.png" />
     <Content Include="Images\product\B03.png" />
@@ -168,6 +173,11 @@
     <Content Include="Images\product\B12.png" />
     <Content Include="Images\product\B13.png" />
     <Content Include="Images\product\B14.png" />
+    <Content Include="Images\product\B15.png" />
+    <Content Include="Images\product\B16.png" />
+    <Content Include="Images\product\B17.png" />
+    <Content Include="Images\product\B18.png" />
+    <Content Include="Images\product\B19.png" />
     <Content Include="Images\product\C01.png" />
     <Content Include="Images\product\C02.png" />
     <Content Include="Images\product\C03.png" />
@@ -184,6 +194,8 @@
     <Content Include="Images\product\C14.png" />
     <Content Include="Images\product\C15.png" />
     <Content Include="Images\product\C16.png" />
+    <Content Include="Images\product\C17.png" />
+    <Content Include="Images\product\C18.png" />
     <Content Include="Images\product\CA.png" />
     <Content Include="Images\product\CB.png" />
     <Content Include="Images\product\CC.png" />
@@ -236,6 +248,11 @@
     <Content Include="Images\thumbs\A16.jpg" />
     <Content Include="Images\thumbs\A17.jpg" />
     <Content Include="Images\thumbs\A18.jpg" />
+    <Content Include="Images\thumbs\A19.jpg" />
+    <Content Include="Images\thumbs\A20.jpg" />
+    <Content Include="Images\thumbs\A21.jpg" />
+    <Content Include="Images\thumbs\A22.jpg" />
+    <Content Include="Images\thumbs\A23.jpg" />
     <Content Include="Images\thumbs\B01.jpg" />
     <Content Include="Images\thumbs\B02.jpg" />
     <Content Include="Images\thumbs\B03.jpg" />
@@ -250,6 +267,11 @@
     <Content Include="Images\thumbs\B12.jpg" />
     <Content Include="Images\thumbs\B13.jpg" />
     <Content Include="Images\thumbs\B14.jpg" />
+    <Content Include="Images\thumbs\B15.jpg" />
+    <Content Include="Images\thumbs\B16.jpg" />
+    <Content Include="Images\thumbs\B17.jpg" />
+    <Content Include="Images\thumbs\B18.jpg" />
+    <Content Include="Images\thumbs\B19.jpg" />
     <Content Include="Images\thumbs\C01.jpg" />
     <Content Include="Images\thumbs\C02.jpg" />
     <Content Include="Images\thumbs\C03.jpg" />
@@ -266,6 +288,8 @@
     <Content Include="Images\thumbs\C14.jpg" />
     <Content Include="Images\thumbs\C15.jpg" />
     <Content Include="Images\thumbs\C16.jpg" />
+    <Content Include="Images\thumbs\C17.jpg" />
+    <Content Include="Images\thumbs\C18.jpg" />
     <Content Include="Images\thumbs\CA.jpg" />
     <Content Include="Images\thumbs\CB.jpg" />
     <Content Include="Images\thumbs\CC.jpg" />

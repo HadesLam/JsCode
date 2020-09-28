@@ -4,14 +4,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace H.Model
 {
-    public class IPSite : BaseModel
+    public class Setting : BaseModel
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public new long Id { get; set; }
 
-        [MaxLength(255)] public string countryCode { get; set; }
-        [MaxLength(255)] public string siteUrl { get; set; }
+        [MaxLength(255)] public string name { get; set; }
+        [MaxLength(255)] public string value { get; set; }
+        [MaxLength(255)] public string control { get; set; }
 
         /// <summary>
         /// 操作时间
@@ -29,5 +30,6 @@ namespace H.Model
             }
             set { _optime = value; }
         }
+
     }
 }

@@ -20,6 +20,7 @@
         public DbSet<MCData> BAS_MCData { get; set; }
         public DbSet<IPSite> BAS_IPSite { get; set; }
         public DbSet<KSData> BAS_KSData { get; set; }
+        public DbSet<Setting> BAS_Setting { get; set; }
     }
 
 

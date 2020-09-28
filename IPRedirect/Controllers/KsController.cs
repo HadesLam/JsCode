@@ -15,13 +15,17 @@ namespace IPRedirect.Controllers
     public class KsController : Controller
     {
         private IKSDataService _IKSData = ServiceResposity.GetService<IKSDataService>();
+        private ISettingService _ISetting = ServiceResposity.GetService<ISettingService>();
+
         public RedirectResult Index()
         {
+            GetShowStatus();
             return Redirect("~/ks/in");
         }
 
         public ActionResult IN()
         {
+            GetShowStatus();
             var url = Request.UrlReferrer;
             ViewBag.dsShow = false;
             if (url != null && url.AbsoluteUri.ToLower().Contains("/ds"))
@@ -33,6 +37,7 @@ namespace IPRedirect.Controllers
 
         public ActionResult RE()
         {
+            GetShowStatus();
             var url = Request.UrlReferrer;
             ViewBag.dsShow = false;
             if (url != null && url.AbsoluteUri.ToLower().Contains("/ds"))
@@ -51,6 +56,15 @@ namespace IPRedirect.Controllers
                 _IKSData.Add(_ks);
             }
             return Content("true");
+        }
+
+        public void GetShowStatus()
+        {
+            var isShow = _ISetting.Search("KSshow");
+            if (!Convert.ToBoolean(isShow.value))
+            {
+                Response.Redirect("~/404.html");
+            };
         }
     }
 }

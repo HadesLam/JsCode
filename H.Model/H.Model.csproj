@@ -46,6 +46,7 @@
     <Compile Include="Model\KSData.cs" />
     <Compile Include="Model\IPSite.cs" />
     <Compile Include="Model\MCData.cs" />
+    <Compile Include="Model\Setting.cs" />
     <Compile Include="Model\Visitor.cs" />
     <Compile Include="Model\AZData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
