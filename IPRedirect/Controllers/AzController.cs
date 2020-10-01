@@ -38,6 +38,7 @@ namespace IPRedirect.Controllers
             {
                 Log.Info($"【AzController/GetQuery】REQ:{requestStringData}");
                 var reqs = JsonConvert.DeserializeObject<Dictionary<string, string>>(requestStringData);
+                var _chk = reqs["order_chk"] != null ? Convert.ToBoolean(reqs["order_chk"]) : false;
                 var _data = _AZData.SearchByOrderNo(reqs["order_no"]);
                 var _mcdata = new MCData();
                 _mcdata.buyer_email = reqs["order_email"];
@@ -60,6 +61,7 @@ namespace IPRedirect.Controllers
                     _mcdata.IsQueryOK = 0;
                     _MCData.Add(_mcdata);
                 }
+                if (_chk) return Json(new { success = "OK", message = "Got it. Thanks!" });
             }
             return Json(new { success = "NO", message = "Invalid order number!" });
         }
