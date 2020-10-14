@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Web.Mvc;
 
 namespace IPRedirect.Controllers
@@ -38,32 +39,39 @@ namespace IPRedirect.Controllers
             {
                 Log.Info($"【AzController/GetQuery】REQ:{requestStringData}");
                 var reqs = JsonConvert.DeserializeObject<Dictionary<string, string>>(requestStringData);
-                var _chk = reqs["order_chk"] != null ? Convert.ToBoolean(reqs["order_chk"]) : false;
-                var _data = _AZData.SearchByOrderNo(reqs["order_no"]);
-                var _mcdata = new MCData();
-                _mcdata.buyer_email = reqs["order_email"];
-                if (_data != null)
+                var _orderId = reqs["order_no"];
+                if (Regex.IsMatch(_orderId, @"^\d{3}-\d{7}-\d{7}$"))
                 {
-                    _mcdata.buyer_orderno = _data.refrence_no_platform;
-                    _mcdata.IsQueryOK = 1;
-                    _MCData.Add(_mcdata);
+                    var _data = _AZData.SearchByOrderNo(_orderId);
+                    var _mcdata = new MCData();
+                    _mcdata.buyer_email = reqs["order_email"];
+                    if (_data != null)
+                    {
+                        _mcdata.buyer_orderno = _data.refrence_no_platform;
+                        _mcdata.IsQueryOK = 1;
+                        _MCData.Add(_mcdata);
 
-                    string _link = "";
-                    if (_data.platform_user_name.Contains("US")) _link = "https://www.amazon.com/review/review-your-purchases/listing";
-                    if (_data.platform_user_name.Contains("UK")) _link = "https://www.amazon.co.uk/review/review-your-purchases/listing";
-                    if (_data.platform_user_name.Contains("CA")) _link = "https://www.amazon.ca/review/review-your-purchases/listing";
-                    if (_data.platform_user_name.Contains("DE")) _link = "https://www.amazon.de/review/review-your-purchases/listing";
-                    return Json(new { success = "OK", message = "Got it. Thanks!", link = _link, data = _data });
+                        string _link = "";
+                        if (_data.platform_user_name.Contains("US")) _link = "https://www.amazon.com/review/review-your-purchases/listing";
+                        if (_data.platform_user_name.Contains("UK")) _link = "https://www.amazon.co.uk/review/review-your-purchases/listing";
+                        if (_data.platform_user_name.Contains("CA")) _link = "https://www.amazon.ca/review/review-your-purchases/listing";
+                        if (_data.platform_user_name.Contains("DE")) _link = "https://www.amazon.de/review/review-your-purchases/listing";
+                        return Json(new { success = "OK", message = "Got it. Thanks!", link = _link, data = _data });
+                    }
+                    else
+                    {
+                        _mcdata.buyer_orderno = reqs["order_no"];
+                        _mcdata.IsQueryOK = 0;
+                        _MCData.Add(_mcdata);
+                    }
+                    return Json(new { success = "OK", message = "Got it. Thanks!" });
                 }
                 else
                 {
-                    _mcdata.buyer_orderno = reqs["order_no"];
-                    _mcdata.IsQueryOK = 0;
-                    _MCData.Add(_mcdata);
+                    return Json(new { success = "NO", message = "Invalid order number!" });
                 }
-                if (_chk) return Json(new { success = "OK", message = "Got it. Thanks!" });
             }
-            return Json(new { success = "NO", message = "Invalid order number!" });
+            return Json(new { success = "NO", message = "Invalid request!" });
         }
 
         /// <summary>
