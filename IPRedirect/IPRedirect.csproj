@@ -354,6 +354,7 @@
     <Content Include="Scripts\i18n\i18n_en.json" />
     <Content Include="Scripts\i18n\i18n_hk.json" />
     <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
+    <Content Include="Scripts\i18n\i18n_jp.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.5.1-vsdoc.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />

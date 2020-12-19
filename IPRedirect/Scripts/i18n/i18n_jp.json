@@ -1,0 +1,31 @@
+{
+  "i18n.Title": "Infantry - カスタム腕時計",
+
+  "i18n.Dial.title": "時計の文字盤/ムーブメント",
+  "i18n.Dial.title.01": "スケルトン - シーガル 自動巻き ムーブメント",
+  "i18n.Dial.title.02": "GMT モデル - シーガル 自動巻き ムーブメント",
+  "i18n.Dial.title.03": "日付入り アナログ - Seiko NH35 自動巻き ムーブメント",
+  "i18n.Dial.title.04": "Skeleton - STP Swiss Made Automatic Movement",
+  "i18n.Dial.title.05": "Analog - Miyota 9015 Automatic Movement AMWG Edition",
+
+  "i18n.Case.title": "時計ケース",
+  "i18n.Case.title.01": "ステンレス PVD",
+  "i18n.Case.title.02": "ステンレスセラコート",
+  "i18n.Case.title.03": "プラスチック",
+
+  "i18n.Face.title": "フェイスプレート",
+  "i18n.Face.title.01": "ステンレス PVD",
+  "i18n.Face.title.02": "ステンレスセラコート",
+  "i18n.Face.title.03": "プラスチック",
+
+  "i18n.Ring.title": "時計リング",
+  "i18n.Ring.title.01": "ステンレス PVD",
+  "i18n.Ring.title.02": "ステンレスセラコート",
+
+  "i18n.Strap.title": "時計ストラップ",
+  "i18n.Strap.title.01": "ステンレスバンド",
+  "i18n.Strap.title.02": "本革",
+  "i18n.Strap.title.03": "シリコン",
+
+  "i18n.SUBMIT": "決定"
+}

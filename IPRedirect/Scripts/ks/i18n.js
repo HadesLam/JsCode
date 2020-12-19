@@ -46,6 +46,9 @@ $('.showLang').change(function () {
         case 'TraditionalChinese':
             defaultLang = 'hk';
             break;
+        case 'Janpanse':
+            defaultLang = 'jp';
+            break;
         default:
             defaultLang = 'en';
     }
