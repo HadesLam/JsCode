@@ -20,6 +20,7 @@ function languageSelect(defaultLang) {
 
 ready(function () {
     var lang = (navigator.language || navigator.browserLanguage).toLowerCase();
+    // console.log(lang);
     if (lang.indexOf('zh') >= 0) {
         if (lang.indexOf('cn') >= 0) {
             defaultLang = 'cn';
@@ -28,6 +29,10 @@ ready(function () {
             defaultLang = 'hk';
             $('.showLang').val('TraditionalChinese');
         }
+    }
+    if (lang.indexOf('ja') >= 0) {
+        defaultLang = 'ja';
+        $('.showLang').val('Janpanse');
     }
     languageSelect(defaultLang)
 });
@@ -47,7 +52,7 @@ $('.showLang').change(function () {
             defaultLang = 'hk';
             break;
         case 'Janpanse':
-            defaultLang = 'jp';
+            defaultLang = 'ja';
             break;
         default:
             defaultLang = 'en';
