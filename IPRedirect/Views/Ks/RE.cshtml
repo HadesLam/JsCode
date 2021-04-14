@@ -18,17 +18,17 @@
 
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        @Html.Partial("_Header")
+        @await Html.PartialAsync("_Header")
         <main class="mdl-layout__content">
             <div class="page-content mdl-grid">
                 <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--3-col-tablet mdl-cell--middle">
                     <div class="watch">
                         <svg class="watch-image" id="watch-image" xmlns="http://www.w3.org/2000/svg" version="1.1">
                             <g class="svg-content">
-                                <image id="watch-band" height="400" width="233" xlink:href="/Images/product/D01.png" />
-                                <image id="watch-core" height="400" width="233" xlink:href="/Images/product/CA.png" />
-                                <image id="watch-case" height="400" width="233" xlink:href="/Images/product/A15.png" />
-                                <image id="watch-bezel" height="400" width="233" xlink:href="/Images/product/C13.png" />
+                                <image id="watch-band" height="400" width="233" xlink:href="/Images/product/IN-STP-01.png" />
+                                <image id="watch-core" height="400" width="233" xlink:href="/Images/product/IN-MOV-01.png" />
+                                <image id="watch-case" height="400" width="233" xlink:href="/Images/product/IN-CAS-15.png" />
+                                <image id="watch-bezel" height="400" width="233" xlink:href="/Images/product/IN-RIN-13.png" />
                             </g>
                         </svg>
                     </div>
@@ -37,10 +37,10 @@
                     <div class="settings mdl-card mdl-shadow--2dp">
                         <div class="options">
                             <div class="layui-collapse" lay-accordion="">
-                                @Html.Partial("_WatchDial_00")
-                                @Html.Partial("_WatchCase_01")
-                                @Html.Partial("_WatchRing_01")
-                                @Html.Partial("_WatchStrap")
+                                @await Html.PartialAsync("_WatchDial_00")
+                                @await Html.PartialAsync("_WatchCase_01")
+                                @await Html.PartialAsync("_WatchRing_01")
+                                @await Html.PartialAsync("_WatchStrap")
                             </div>
                         </div>
                         <div class="mdl-card__actions mdl-card--border">

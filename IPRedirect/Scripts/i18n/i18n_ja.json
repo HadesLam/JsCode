@@ -1,31 +1,31 @@
 {
-  "i18n.Title": "Infantry - ¥«¥¹¥¿¥àÍó•rÓ‹",
+  "i18n.Title": "Infantry - ã‚«ã‚¹ã‚¿ãƒ è…•æ™‚è¨ˆ",
 
-  "i18n.Dial.title": "•rÓ‹¤ÎÎÄ×Ö±P/¥à©`¥Ö¥á¥ó¥È",
-  "i18n.Dial.title.01": "¥¹¥±¥ë¥È¥ó - ¥·©`¥¬¥ë ×Ô„Ó†¤­ ¥à©`¥Ö¥á¥ó¥È",
-  "i18n.Dial.title.02": "GMT ¥â¥Ç¥ë - ¥·©`¥¬¥ë ×Ô„Ó†¤­ ¥à©`¥Ö¥á¥ó¥È",
-  "i18n.Dial.title.03": "ÈÕ¸¶Èë¤ê ¥¢¥Ê¥í¥° - Seiko NH35 ×Ô„Ó†¤­ ¥à©`¥Ö¥á¥ó¥È",
+  "i18n.Dial.title": "æ™‚è¨ˆã®æ–‡å­—ç›¤/ãƒ ãƒ¼ãƒ–ãƒ¡ãƒ³ãƒˆ",
+  "i18n.Dial.title.01": "ã‚¹ã‚±ãƒ«ãƒˆãƒ³ - ã‚·ãƒ¼ã‚¬ãƒ« è‡ªå‹•å·»ã ãƒ ãƒ¼ãƒ–ãƒ¡ãƒ³ãƒˆ",
+  "i18n.Dial.title.02": "GMT ãƒ¢ãƒ‡ãƒ« - ã‚·ãƒ¼ã‚¬ãƒ« è‡ªå‹•å·»ã ãƒ ãƒ¼ãƒ–ãƒ¡ãƒ³ãƒˆ",
+  "i18n.Dial.title.03": "æ—¥ä»˜å…¥ã‚Š ã‚¢ãƒŠãƒ­ã‚° - Seiko NH35 è‡ªå‹•å·»ã ãƒ ãƒ¼ãƒ–ãƒ¡ãƒ³ãƒˆ",
   "i18n.Dial.title.04": "Skeleton - STP Swiss Made Automatic Movement",
   "i18n.Dial.title.05": "Analog - Miyota 9015 Automatic Movement AMWG Edition",
 
-  "i18n.Case.title": "•rÓ‹¥±©`¥¹",
-  "i18n.Case.title.01": "¥¹¥Æ¥ó¥ì¥¹ PVD",
-  "i18n.Case.title.02": "¥¹¥Æ¥ó¥ì¥¹¥»¥é¥³©`¥È",
-  "i18n.Case.title.03": "¥×¥é¥¹¥Á¥Ã¥¯",
+  "i18n.Case.title": "æ™‚è¨ˆã‚±ãƒ¼ã‚¹",
+  "i18n.Case.title.01": "ã‚¹ãƒ†ãƒ³ãƒ¬ã‚¹ PVD",
+  "i18n.Case.title.02": "ã‚¹ãƒ†ãƒ³ãƒ¬ã‚¹ã‚»ãƒ©ã‚³ãƒ¼ãƒˆ",
+  "i18n.Case.title.03": "ãƒ—ãƒ©ã‚¹ãƒãƒƒã‚¯",
 
-  "i18n.Face.title": "¥Õ¥§¥¤¥¹¥×¥ì©`¥È",
-  "i18n.Face.title.01": "¥¹¥Æ¥ó¥ì¥¹ PVD",
-  "i18n.Face.title.02": "¥¹¥Æ¥ó¥ì¥¹¥»¥é¥³©`¥È",
-  "i18n.Face.title.03": "¥×¥é¥¹¥Á¥Ã¥¯",
+  "i18n.Face.title": "ãƒ•ã‚§ã‚¤ã‚¹ãƒ—ãƒ¬ãƒ¼ãƒˆ",
+  "i18n.Face.title.01": "ã‚¹ãƒ†ãƒ³ãƒ¬ã‚¹ PVD",
+  "i18n.Face.title.02": "ã‚¹ãƒ†ãƒ³ãƒ¬ã‚¹ã‚»ãƒ©ã‚³ãƒ¼ãƒˆ",
+  "i18n.Face.title.03": "ãƒ—ãƒ©ã‚¹ãƒãƒƒã‚¯",
 
-  "i18n.Ring.title": "•rÓ‹¥ê¥ó¥°",
-  "i18n.Ring.title.01": "¥¹¥Æ¥ó¥ì¥¹ PVD",
-  "i18n.Ring.title.02": "¥¹¥Æ¥ó¥ì¥¹¥»¥é¥³©`¥È",
+  "i18n.Ring.title": "æ™‚è¨ˆãƒªãƒ³ã‚°",
+  "i18n.Ring.title.01": "ã‚¹ãƒ†ãƒ³ãƒ¬ã‚¹ PVD",
+  "i18n.Ring.title.02": "ã‚¹ãƒ†ãƒ³ãƒ¬ã‚¹ã‚»ãƒ©ã‚³ãƒ¼ãƒˆ",
 
-  "i18n.Strap.title": "•rÓ‹¥¹¥È¥é¥Ã¥×",
-  "i18n.Strap.title.01": "¥¹¥Æ¥ó¥ì¥¹¥Ğ¥ó¥É",
-  "i18n.Strap.title.02": "±¾¸ï",
-  "i18n.Strap.title.03": "¥·¥ê¥³¥ó",
+  "i18n.Strap.title": "æ™‚è¨ˆã‚¹ãƒˆãƒ©ãƒƒãƒ—",
+  "i18n.Strap.title.01": "ã‚¹ãƒ†ãƒ³ãƒ¬ã‚¹ãƒãƒ³ãƒ‰",
+  "i18n.Strap.title.02": "æœ¬é©",
+  "i18n.Strap.title.03": "ã‚·ãƒªã‚³ãƒ³",
 
-  "i18n.SUBMIT": "›Q¶¨"
+  "i18n.SUBMIT": "æ±ºå®š"
 }
